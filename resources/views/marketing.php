@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel-welcome</title>
+
+    <title>Laravel-chi-sono</title>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <!-- Styles -->
     <style>
         /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
@@ -846,10 +849,10 @@
                             Servizi
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Siti">Siti</a></li>
+                            <li><a class="dropdown-item" href="siti">Siti</a></li>
                             <li><a class="dropdown-item" href="eCommerce">eCommerce</a></li>
-                            <li><a class="dropdown-item" href="Gestionali">Gestionali</a></li>
-                            <li><a class="dropdown-item" href="Marketing">Marketing</a></li>
+                            <li><a class="dropdown-item" href="gestionali">Gestionali</a></li>
+                            <li><a class="dropdown-item" href="marketing">Marketing</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -863,10 +866,10 @@
             </div>
         </div>
     </nav>
-    <h1>Homepage</h1>
+    <h1>Marketing</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

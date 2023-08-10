@@ -13,6 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/homepage', function () {
     return view('welcome');
-});
+})->name('homepage');
+
+Route::get('/chi-siamo', function () {
+    return view('chi-siamo');
+})->name('chi-siamo');
+
+Route::get('/siti', function () {
+    return view('siti');
+})->name('siti');
+
+Route::get('/marketing', function () {
+    return view('marketing');
+})->name('marketing');
+
+Route::get('/gestionali', function () {
+    return view('gestionali');
+})->name('gestionali');
+
+Route::get('/eCommerce', function () {
+    return view('eCommerce');
+})->name('eCommerce');
+
+Route::get('/contatti', function () {
+    return view('contatti');
+})->name('contatti');
