@@ -17,6 +17,6 @@ Route::get('/homepage', function () {
     return view('welcome');
 })->name('homepage');
 
-Route::get('/chi-siamo', function () {
-    return view('chi-siamo');
-})->name('chi-siamo');
+// Route::get('/chi-siamo', function () {
+//     return view('chi-siamo');
+// })->name('chi-siamo');
