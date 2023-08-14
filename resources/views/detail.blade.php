@@ -25,9 +25,44 @@
                 <button type="button" class="btn btn-outline-primary me-2">Login</button>
                 <button type="button" class="btn btn-primary">Sign-up</button>
             </div>
-
         </div>
     </nav>
+
+    <div class="container px-4 py-5" style="
+    margin-top: 75px;">
+        <h2 class="pb-2 border-bottom">Servizi offerti</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+
+            <div class="col d-flex flex-column align-items-start gap-2">
+                <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
+                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add
+                    onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+            </div>
+
+            <div class="col">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    @foreach ($services as $service)
+                        <div class="col d-flex flex-column gap-2">
+
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                {{ $service }}
+                            </div>
+
+                            <h4 class="fw-semibold mb-0 text-body-emphasis"></h4>
+                            
+                            <p class="text-body-secondary">
+                            </p>
+
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>

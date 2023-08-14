@@ -22,8 +22,13 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/services', function () {
-    return view('services');
+    $services = ['Siti', 'eCommerce', 'Gestionali', 'Marketing'];
+    return view('services', ['services' => $services]);
 })->name('services');
+
+Route::get('/services/{service}', function ($string) {
+    return view('detail', ['service' => $string]);
+})->name('detail');
 
 Route::get('/contact', function () {
     return view('contact');
