@@ -38,19 +38,28 @@
     <main class="p-0" style="margin-top: 70px;">
         <header>
             <div class="bg-dark w-100 d-flex justify-content-center align-items-center">
-                <div class="text-light fs-5 px-5 m-custom">
-                    <h1 class="fs-3 d-flex justify-content-center">
+                <div class="text-light fs-5 px-5" style="margin-top: 150px;">
+                    <h1 class="fs-3">
                         Mattia Carcione
                     </h1>
-                    <h2 class="fs-4 d-flex justify-content-center">
+                    <h2 class="fs-4">
                         Web Developer
                     </h2>
-                    <p class="d-flex justify-content-center">
-                        <a><i class="fa-brands fa-instagram" style="color: #f0f2f4;"></i></a>
-                        <a href=""><i class="fa-brands fa-discord" style="color: #fafafa;"></i></a>
-                        <a href=""><i class="fa-brands fa-skype" style="color: #fafafa;"></i></a>
-                        <a><i class="fa-solid fa-envelope" style="color: #fafafa;"></i></a>
+                    <p>
+                        <a href="https://www.google.com/">
+                            <i class="fa-brands fa-instagram" style="color: #f0f2f4;"></i>
+                        </a>
+                        <a href="https://www.google.com/">
+                            <i class="fa-brands fa-discord" style="color: #fafafa;"></i>
+                        </a>
+                        <a href="https://www.google.com/">
+                            <i class="fa-brands fa-skype" style="color: #fafafa;"></i>
+                        </a>
+                        <a href="https://www.google.com/">
+                            <i class="fa-solid fa-envelope" style="color: #fafafa;"></i>
+                        </a>
                     </p>
+                    <button type="button" class="btn btn-outline-light fs-6" style="height: 10%">Inizia</button>
                 </div>
                 <div class="px-5">
                     <img src="/_sfondoProgetto.jpg" alt="" class="my-5 border-custom img-fluid">
