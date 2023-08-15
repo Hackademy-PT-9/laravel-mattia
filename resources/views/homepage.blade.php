@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body class="container p-0">
+<body class="container p-0" style="background-color: rgb(68, 87, 96);">
     <nav class="container border border-white position-fixed" id="navbar">
         <div
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1">
