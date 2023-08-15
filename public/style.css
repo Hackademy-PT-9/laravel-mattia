@@ -1,11 +1,18 @@
 body {
-    background-image: url(/_sfondoProgetto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
+    background-color: rgb(68, 87, 96);
 }
 
-nav {
+nav,
+.bgCustom {
+    background-color: #c5dce4 !important;
     opacity: 0.8;
+}
+
+header {
+    height: 100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
 }
 
 header div {

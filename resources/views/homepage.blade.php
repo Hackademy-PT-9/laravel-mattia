@@ -17,9 +17,9 @@
 </head>
 
 <body class="container p-0">
-    <nav class="container fixed-top bg-light">
+    <nav class="container fixed-top border border-white">
         <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1 border-bottom">
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1">
 
             <div class="col-md-3 text-end">
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-start mb-md-0">
@@ -35,9 +35,9 @@
 
         </div>
     </nav>
-    <main class="p-0" style="margin-top: 70px;">
+    <main class="p-0">
         <header>
-            <div class="bg-dark w-100 d-flex justify-content-center align-items-center">
+            <div class="w-100 d-flex justify-content-center align-items-center borderCustom">
                 <div class="text-light fs-5 px-5" style="margin-top: 150px;">
                     <h1 class="fs-3">
                         Mattia Carcione
@@ -66,16 +66,18 @@
 
             </div>
         </header>
-        <section class="py-5 d-flex justify-content-around align-items-center bg-light">
+        <section class="py-5 d-flex justify-content-around align-items-center bg-light bgCustom">
             <div class="py-5">
                 <h3>
-                    Porta la tua azienda online <br>
-                    Sviluppa il tuo sito o eCommerce
+                    Porta la tua azienda online.
+                </h3>
+                <h3>
+                    Richiedi il tuo sito o eCommerce.
                 </h3>
             </div>
             <div class="py-5">
                 <a href="{{ route('services') }}">
-                    <button type="button" class="btn btn-outline-dark fs-6">Scopri come</button>
+                    <button type="button" class="btn btn-primary fs-6">Scopri come</button>
                 </a>
             </div>
         </section>
