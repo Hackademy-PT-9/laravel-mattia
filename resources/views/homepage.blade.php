@@ -59,7 +59,6 @@
                             <i class="fa-solid fa-envelope" style="color: #fafafa;"></i>
                         </a>
                     </p>
-                    <button type="button" class="btn btn-outline-light fs-6" style="height: 10%">Inizia</button>
                 </div>
                 <div class="px-5">
                     <img src="/_sfondoProgetto.jpg" alt="" class="my-5 border-custom img-fluid">
@@ -67,6 +66,19 @@
 
             </div>
         </header>
+        <section class="py-5 d-flex justify-content-around align-items-center bg-light">
+            <div class="py-5">
+                <h3>
+                    Porta la tua azienda online <br>
+                    Sviluppa il tuo sito o eCommerce
+                </h3>
+            </div>
+            <div class="py-5">
+                <a href="{{ route('services') }}">
+                    <button type="button" class="btn btn-outline-dark fs-6">Scopri come</button>
+                </a>
+            </div>
+        </section>
         <footer>
 
         </footer>
