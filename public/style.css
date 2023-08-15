@@ -5,7 +5,8 @@ body {
 nav,
 .bgCustom {
     background-color: #c5dce4 !important;
-    opacity: 0.8;
+    opacity: 0.85;
+    z-index: 1;
 }
 
 header {

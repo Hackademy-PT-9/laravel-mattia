@@ -17,7 +17,7 @@
 </head>
 
 <body class="container p-0">
-    <nav class="container fixed-top border border-white">
+    <nav class="container border border-white position-fixed" id="navbar">
         <div
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1">
 
@@ -88,6 +88,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
+    <script src="\script.js"></script>
 </body>
 
 </html>
