@@ -1,34 +1,118 @@
-nav,
-.bgCustom {
-    background-color: #c5dce4 !important;
-    opacity: 0.85;
+body {
+    font-size: bolder;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
     z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 header {
     height: 100vh;
-    background-color: #1a1a1a;
-    display: flex;
-    align-items: center;
+    background-color: #f5f5f5;
+    margin-bottom: 25px;
 }
 
 header div {
     padding: 50px 0;
     opacity: 0.9;
-    font-family: 'Lato', sans-serif;
+}
+
+section {
+    background-color: #1a1a1a;
+    padding: 150px 0;
+    margin-bottom: 25px;
+}
+
+.hiddenDiv {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+span {
+    color: #9300ff;
 }
 
 .border-custom {
-    border: solid 2px white;
+    border: solid 2px #1a1a1a;
     border-radius: 50%;
     width: 250px;
     height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img-hidden {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.img-hidden1 {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.img-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+li:hover {
+    background-color: black !important;
+    border: 1px solid white !important;
 }
 
 a {
     text-decoration: none;
 }
 
+li a:hover {
+    color: white !important;
+}
+
 i {
     margin: 0 5px;
+}
+
+
+/* Stile di base per il footer */
+.contact-footer {
+    background-color: #bdbebd;
+    color: black;
+    padding: 100px 0 50px 0;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+
+.appear {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* Stile per le informazioni di contatto */
+.contact-info {
+    text-align: right;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: black;
 }
