@@ -88,8 +88,8 @@
             <div class="container d-flex justify-content-center align-items-center sectionCustom"
                 style="padding-top: 150px">
                 <div>
-                    <h1 style="color: white;" class="fs-3 mb-5">
-                        Eleva la tua azienda al mondo digitale con <span style="color: #9300ff;">siti web</span> su
+                    <h1 class="fs-3 mb-5 text-light">
+                        Eleva la tua azienda al mondo digitale con <span>siti web</span> su
                         misura.
                     </h1>
                     <a href=""><button type="button" class="btn btn-outline-light mt-3">Scopri di
@@ -108,9 +108,8 @@
                         src="https://imgcdn.agendadigitale.eu/wp-content/uploads/2020/04/17090447/e-commerce.jpg">
                 </div>
                 <div style="text-align: right;">
-                    <h1 style="color: white;" class="fs-3">
-                        Trasforma le tue passioni in profitti online, realizzando il tuo <span
-                            style="color: #9300ff;">eCommerce</span>.
+                    <h1 class="fs-3 text-light">
+                        Trasforma le tue passioni in profitti online, realizzando il tuo <span>eCommerce</span>.
                     </h1>
                     <button type="button" class="btn btn-outline-light mt-3">Scopri di più</button>
                 </div>
