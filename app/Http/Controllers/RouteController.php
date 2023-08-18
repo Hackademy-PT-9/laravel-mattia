@@ -23,7 +23,12 @@ class RouteController extends Controller
     }
     public function detail($string)
     {
-        return view('detail', ['detail' => $string]);
+        foreach (self::$services as $service) {
+            if ($string == $service) {
+                return view('detail', ['detail' => $string]);
+            }
+        }
+        abort(404);
     }
     public function contact()
     {
