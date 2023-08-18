@@ -21,14 +21,18 @@
 
             <div class="col-md-3 text-end">
                 <ul class="dCustom nav col-12 col-md-auto mb-2 justify-content-start mb-md-0">
-                    <li class="border border-dark rounded"><a href="{{ route('homepage') }}" class="nav-link px-2 text-black">Home</a></li>
+                    <li class="border border-dark rounded"><a href="{{ route('homepage') }}"
+                            class="nav-link px-2 text-black">Home</a></li>
                 </ul>
             </div>
 
             <ul class="dCustom nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li class="border border-dark rounded mx-1"><a href="{{ route('about') }}" class="nav-link text-black">Chi sono</a></li>
-                <li class="border border-dark rounded mx-1"><a href="{{ route('services') }}" class="nav-link text-black">Servizi</a></li>
-                <li class="border border-dark rounded mx-1"><a href="{{ route('contact') }}" class="nav-link text-black">Contattami</a></li>
+                <li class="border border-dark rounded mx-1"><a href="{{ route('about') }}"
+                        class="nav-link text-black">Chi sono</a></li>
+                <li class="border border-dark rounded mx-1"><a href="{{ route('services') }}"
+                        class="nav-link text-black">Servizi</a></li>
+                <li class="border border-dark rounded mx-1"><a href="{{ route('contact') }}"
+                        class="nav-link text-black">Contattami</a></li>
             </ul>
         </div>
     </nav>
@@ -45,8 +49,7 @@
                     </h2>
                     <p>
                         <a href="https://www.google.com/">
-                            <i class="fa-brands fa-instagram fw-bolder"
-                                style="color: #333333 !important;"></i>
+                            <i class="fa-brands fa-instagram fw-bolder" style="color: #333333 !important;"></i>
                         </a>
                         <a href="https://www.google.com/">
                             <i class="fa-brands fa-discord fw-bolder" style="color: #333333 !important;"></i>
@@ -66,8 +69,7 @@
             </div>
         </header>
 
-        <section
-            class="d-flex justify-content-around flex-wrap align-items-center border-top border-light">
+        <section class="d-flex justify-content-around flex-wrap align-items-center border-top border-light">
             <div class="py-5 container d-flex justify-content-center align-items-center flex-wrap"
                 style="height: 100vh; margin: 0 20%;">
                 <div id="myDiv" class="hiddenDiv">
@@ -85,15 +87,15 @@
                 </div>
             </div>
 
-            <div class="container d-flex justify-content-center align-items-center marginY"
-                style="padding-top: 150px">
+            <div class="container d-flex justify-content-center align-items-center marginY" style="padding-top: 150px">
                 <div>
                     <h1 class="fs-3 mb-5 text-light">
                         Eleva la tua azienda al mondo digitale con <span>siti web</span> su
                         misura.
                     </h1>
-                    <a href=""><button type="button" class="btn btn-outline-light mt-3">Scopri di
-                            più</button></a>
+                    <a href="{{ route('services') }}">
+                        <button type="button" class="btn btn-outline-light mt-3">Scopri di più</button>
+                    </a>
                 </div>
                 <div class="ms-5 d-none d-md-block" style="max-width: 45%;">
                     <img class="img-hidden-dx img-fluid border border-white rounded"
@@ -101,8 +103,7 @@
                 </div>
             </div>
 
-            <div class="container d-flex justify-content-center align-items-center marginY"
-                style="padding-top: 150px">
+            <div class="container d-flex justify-content-center align-items-center marginY" style="padding-top: 150px">
                 <div class="me-5 d-none d-md-block" style="max-width: 45%;">
                     <img class="img-hidden-sx img-fluid border border-white rounded"
                         src="https://imgcdn.agendadigitale.eu/wp-content/uploads/2020/04/17090447/e-commerce.jpg">
@@ -111,18 +112,22 @@
                     <h1 class="fs-3 text-light">
                         Trasforma le tue passioni in profitti online, realizzando il tuo <span>eCommerce</span>.
                     </h1>
-                    <button type="button" class="btn btn-outline-light mt-3">Scopri di più</button>
+                    <a href="{{ route('services') }}">
+                        <button type="button" class="btn btn-outline-light mt-3">Scopri di più</button>
+                    </a>
                 </div>
             </div>
 
             <div id="yourDiv" class="container d-flex justify-content-center align-items-center marginY"
                 style="margin-top: 200px">
                 <div class="text-center">
-                    <h1 class="fs-3 hidden text-light">
+                    <h1 class="fs-3 text-light hidden">
                         Espandi i confini del tuo <span>Business</span>. <br>
                         Vieni ad esplorare tutti i servizi.
                     </h1>
-                    <button type="button" class="btn btn-outline-light mt-3 hidden">Scopri di più</button>
+                    <a href="{{ route('services') }}">
+                        <button type="button" class="btn btn-outline-light mt-3 hidden">Scopri di più</button>
+                    </a>
                 </div>
             </div>
         </section>
