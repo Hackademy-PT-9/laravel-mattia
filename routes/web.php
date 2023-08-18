@@ -23,3 +23,8 @@ Route::get('/services', [RouteController::class, 'services'])->name('services');
 Route::get('/services/{detail}', [RouteController::class, 'detail'])->name('detail');
 
 Route::get('/contact', [RouteController::class, 'contact'])->name('contact');
+
+//route per il test front end
+Route::get('/test', function(){
+    return view('test');
+})->name('test');
