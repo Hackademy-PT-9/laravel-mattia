@@ -28,7 +28,7 @@ window.onscroll = function () {
     }
 
     //scorrimento vs dx dell'immagine
-    let firstImage = document.querySelectorAll('.img-hidden');//prendo l'immagine
+    let firstImage = document.querySelectorAll('.img-hidden-dx');//prendo l'immagine
 
     for (let i = 0; i < firstImage.length; i++) {
         let img = firstImage[i];
@@ -42,7 +42,7 @@ window.onscroll = function () {
     }
 
     //scorrimento vs sx dell'immagine
-    let secondImage = document.querySelectorAll('.img-hidden1');
+    let secondImage = document.querySelectorAll('.img-hidden-sx');
 
     for (let i = 0; i < secondImage.length; i++) {
         let image = secondImage[i];

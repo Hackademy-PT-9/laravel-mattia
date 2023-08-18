@@ -71,7 +71,7 @@
             <div class="py-5 container d-flex justify-content-center align-items-center flex-wrap"
                 style="height: 100vh; margin: 0 20%;">
                 <div id="myDiv" class="hiddenDiv">
-                    <h1 class="mb-3 text-light text-align-center">
+                    <h1 class="mb-3 text-light text-center">
                         Trasforma la tua visione <br> in un'esperienza online <span>straordinaria</span>.
                     </h1>
 
@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="container d-flex justify-content-center align-items-center sectionCustom"
+            <div class="container d-flex justify-content-center align-items-center marginY"
                 style="padding-top: 150px">
                 <div>
                     <h1 class="fs-3 mb-5 text-light">
@@ -96,18 +96,18 @@
                             più</button></a>
                 </div>
                 <div class="ms-5 d-none d-md-block" style="max-width: 45%;">
-                    <img class="img-hidden img-fluid border border-white rounded"
+                    <img class="img-hidden-dx img-fluid border border-white rounded"
                         src="https://doweb.srl/download/decv/2143/come-funziona-sito-web.jpg?20200406155635">
                 </div>
             </div>
 
-            <div class="container d-flex justify-content-center align-items-center sectionCustom"
+            <div class="container d-flex justify-content-center align-items-center marginY"
                 style="padding-top: 150px">
                 <div class="me-5 d-none d-md-block" style="max-width: 45%;">
-                    <img class="img-hidden1 img-fluid border border-white rounded"
+                    <img class="img-hidden-sx img-fluid border border-white rounded"
                         src="https://imgcdn.agendadigitale.eu/wp-content/uploads/2020/04/17090447/e-commerce.jpg">
                 </div>
-                <div style="text-align: right;">
+                <div class="text-end">
                     <h1 class="fs-3 text-light">
                         Trasforma le tue passioni in profitti online, realizzando il tuo <span>eCommerce</span>.
                     </h1>
@@ -115,11 +115,11 @@
                 </div>
             </div>
 
-            <div id="yourDiv" class="container d-flex justify-content-center align-items-center sectionCustom"
+            <div id="yourDiv" class="container d-flex justify-content-center align-items-center marginY"
                 style="margin-top: 200px">
-                <div style="text-align: center;">
-                    <h1 style="color: white;" class="fs-3 hidden">
-                        Espandi i confini del tuo <span style="color: #9300ff;">Business</span>. <br>
+                <div class="text-center">
+                    <h1 class="fs-3 hidden text-light">
+                        Espandi i confini del tuo <span>Business</span>. <br>
                         Vieni ad esplorare tutti i servizi.
                     </h1>
                     <button type="button" class="btn btn-outline-light mt-3 hidden">Scopri di più</button>
@@ -128,7 +128,7 @@
         </section>
     </main>
 
-    <footer class="contact-footer border-top border-light">
+    <footer class="contact-footer text-dark border-top border-light">
         <div class="container">
             /*fare una lista con servizi e iterare i servizi e rotte e about con my story e careers e poi contatti*/
             <div class="contact-info container">
