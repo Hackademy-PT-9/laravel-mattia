@@ -1,5 +1,5 @@
 <!-- Masthead-->
-<header class="masthead bg-primary text-white text-center">
+<header class="masthead bg-primary text-white text-center" style="background-color: rgb(41, 187, 156!important;)">
     <div class="container d-flex align-items-center justify-content-evenly">
         <!-- Masthead Avatar Image-->
         <img class="masthead-avatar mb-5 d-none d-md-block" src="/avatar.svg" alt="..." />
