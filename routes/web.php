@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [RouteController::class, ('homepage')])->name('homepage');
+Route::get('/test', function () {
+    return view('components.test');
+})->name('test');
