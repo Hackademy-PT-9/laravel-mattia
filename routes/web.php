@@ -15,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [RouteController::class, ('homepage')])->name('homepage');
+//rotta test
 Route::get('/test', function () {
     return view('components.test');
 })->name('test');
+
+Route::get('/about', [RouteController::class, ('about')])->name('about');
+
+Route::get('/contact', [RouteController::class, ('contact')])->name('contact');
+
+Route::get('/service', [RouteController::class, ('service')])->name('service');
