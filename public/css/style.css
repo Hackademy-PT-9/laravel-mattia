@@ -47,7 +47,7 @@ h1 {
 }
 
 .introduction__content-el--name {
-    transform: translateX(-15px);
+    transform: translateX(-30px) translateY(15px);
     opacity: 0.5;
 }
 
@@ -65,14 +65,4 @@ h1 {
     transform: translateX(30px);
     text-align: right;
     opacity: 0.5;
-}
-
-.introduction__arrow {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-12px, 0px);
-    width: 24px;
-    fill: c-highlight;
-    animation: scrollDown 1.6s infinite;
 }
