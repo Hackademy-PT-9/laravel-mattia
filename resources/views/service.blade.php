@@ -1,5 +1,4 @@
 <x-layout>
-    <x-navbar />
     <!-- Header-->
     <header class="bg-dark py-5 mt-3">
         <div class="container px-5">
