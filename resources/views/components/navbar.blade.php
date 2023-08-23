@@ -24,7 +24,7 @@
         </ul>
         {{-- hidden d-sd --}}
         <div class="col-md-3 text-end d-none d-md-flex">
-            <button type="button" class="btn btn-outline-primary rounded-pill me-2">Get started</button>
+            <a type="button" href="{{ route('service') }}" class="btn btn-outline-primary rounded-pill me-2">Get started</a>
         </div>
     </div>
 </nav>
