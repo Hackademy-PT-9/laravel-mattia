@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class RouteController extends Controller
 {
+    protected static $services = ['Siti', 'eCommerce', 'Gestionali', 'Marketing'];
     public function homepage()
     {
         return view('welcome');
@@ -20,6 +21,6 @@ class RouteController extends Controller
     }
     public function service()
     {
-        return view('service');
+        return view('service', ['services' => self::$services]);//passo i dati statici
     }
 }
