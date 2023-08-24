@@ -27,9 +27,14 @@
 
 <body>
     <x-navbar />
-    {{ $slot }}
-    <x-footer/>
-    <x-copyright/>
+
+    <main>
+        {{ $slot }}
+    </main>
+
+    <x-footer />
+    
+    <x-copyright />
 
     <script src="/script/script.js"></script>
 
