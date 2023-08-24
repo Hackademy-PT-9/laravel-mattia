@@ -28,6 +28,8 @@
 <body>
     <x-navbar />
     {{ $slot }}
+    <x-footer/>
+    <x-copyright/>
 
     <script src="/script/script.js"></script>
 
