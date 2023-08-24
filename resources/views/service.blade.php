@@ -26,14 +26,14 @@
                                 preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <title>Placeholder</title>
                                 <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
-                                    y="50%" fill="#eceeef" dy=".3em">{{ $detail }}</text>
+                                    y="50%" fill="#eceeef" dy=".3em">{{ $detail['name'] }}</text>
                             </svg>
                             <div class="card-body">
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a type="button" class="btn btn-sm btn-outline-secondary" href="{{route('detail', ['detail' => $detail])}}">View</a>
+                                        <a type="button" class="btn btn-sm btn-outline-secondary" href="{{route('detail', ['detail' => $detail['uri']])}}">View</a>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div>
                                     <small class="text-body-secondary">9 mins</small>
