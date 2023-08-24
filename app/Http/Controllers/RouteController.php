@@ -21,6 +21,16 @@ class RouteController extends Controller
     }
     public function service()
     {
-        return view('service', ['services' => self::$services]);//passo i dati statici
+        return view('service', ['services' => self::$services]); //passo i dati statici
+    }
+
+    public function detail($string)
+    {
+        foreach (self::$services as $service) {
+            if ($service == $string) {
+                return view('detail', ['detail' => $service]);
+            }
+        }
+        abort(404);
     }
 }

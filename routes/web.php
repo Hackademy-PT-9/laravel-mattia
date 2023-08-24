@@ -22,6 +22,8 @@ Route::get('/contact', [RouteController::class, ('contact')])->name('contact');
 
 Route::get('/service', [RouteController::class, ('service')])->name('service');
 
+Route::get('/service/{detail}', [RouteController::class, ('detail')])->name('detail');
+
 //rotta test
 Route::get('/test', function () {
     return view('components.test');
