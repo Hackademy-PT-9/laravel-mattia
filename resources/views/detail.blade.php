@@ -1,7 +1,4 @@
 <x-layout>
-    <x-slot name="title">
-        {{Route::CurrentRouteName()}}
-    </x-slot>
     <x-section-service />
 
     <div class="album py-5 bg-body-tertiary">
