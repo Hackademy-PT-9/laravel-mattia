@@ -20,9 +20,7 @@
     href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@800&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Ysabeau&display=swap"
     rel="stylesheet">
 <!-- Core theme CSS (includes Bootstrap)-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<link href="/css/style.css" rel="stylesheet" />
+@vite(['resources\css\app.css', 'resources\js\app.js'])
 </head>
 
 <body>
@@ -35,8 +33,6 @@
     <x-footer />
     
     <x-copyright />
-
-    <script src="/script/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
