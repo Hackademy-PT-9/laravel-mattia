@@ -2,6 +2,11 @@
 
 /* css navigation */
 
+nav {
+    background-color: white;
+    opacity: 0.9;
+}
+
 .font-barlow {
     font-family: 'Barlow Semi Condensed', sans-serif;
     color: rgb(88, 88, 88);
@@ -14,6 +19,8 @@
 .color-link-nav:hover {
     color: rgb(27, 114, 249);
 }
+
+/* css header homepage */
 
 .introduction {
     position: relative;
