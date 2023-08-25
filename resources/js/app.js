@@ -1,6 +1,12 @@
 import './bootstrap';
 import 'bootstrap';//importo la dipendenza bootstrap
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init(); 
+
 /*!
 * Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2023 Start Bootstrap

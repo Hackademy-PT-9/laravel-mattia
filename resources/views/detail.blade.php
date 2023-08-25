@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-            <x-card-detail :detail=$detail/>
+            <x-card :detail=$detail/>
 
         </div>
     </div>
