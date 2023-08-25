@@ -5,11 +5,13 @@
             <p class="card-text">Descrizione: <br>
                 per <strong>{{ $detail['name'] }}</strong> il tempo di realizzazione è di circa
                 <u>{{ $detail['tempo_di_realizzazione'] }}</u>.
-                <br>Il prezzo è di {{ $detail['costo'] }}€</p>
-            <div class="d-flex justify-content-center">
-                <a href="{{ route('detail', ['detail' => $detail['uri']]) }}" class="btn btn-primary">Get Started</a>
-            </div>
-
+                <br>Il prezzo è di {{ $detail['costo'] }}€
+            </p>
+            @if (Route::currentRouteName() == 'service')
+                <div class="d-flex justify-content-center">
+                    <a href="{{ route('detail', ['detail' => $detail['uri']]) }}" class="btn btn-primary">Get Started</a>
+                </div>
+            @endif
         </div>
     </div>
 </div>
