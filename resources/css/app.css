@@ -45,7 +45,7 @@ nav {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
-  }
+}
 
 .introduction__content {
     color: c-secondary;
@@ -81,28 +81,228 @@ h1 {
 /* css footer */
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #2c3e50;
-  color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #2c3e50;
+    color: #fff;
 }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .btn-social {
-  border-radius: 100%;
-  display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
-  justify-content: center;
-  align-items: center;
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* css copyright */
 .copyright {
     background-color: #1a252f;
-  }
+}
+
+/* css form */
+
+.ftco-section {
+    padding: 7em 0;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: #666666;
+    text-align: left;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* @media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+} */
+
+.heading-section {
+    font-size: 28px;
+    color: #000;
+    color: #666666;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.dbox {
+    margin-bottom: 25px !important;
+    padding: 0 20px;
+}
+
+.dbox .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #46b5d1;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.dbox .icon span {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.dbox .text {
+    width: 100%;
+}
+
+.dbox p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.dbox p span {
+    font-weight: 500;
+    color: #000;
+}
+
+.dbox .text {
+    width: 100%;
+}
+
+.dbox p a {
+    color: #46b5d1;
+    transition: .3s all ease;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.contact-wrap {
+    background: #fff;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.contactForm .label {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    cursor: default;
+}
+
+#contactForm .form-control {
+    font-size: 16px;
+}
+
+.contactForm .form-control {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.form-control {
+    height: 36px;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.btn.btn-primary {
+    background: #46b5d1 !important;
+    border-color: #46b5d1 !important;
+    color: #fff;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input::placeholder {
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    line-height: initial;
+}
+
+::placeholder {
+    -webkit-text-security: none;
+    color: darkgray;
+    direction: inherit;
+    pointer-events: none;
+    text-orientation: inherit;
+    writing-mode: inherit;
+}
+
+.align-items-stretch {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+}
+
+.info-wrap {
+    height: 400px;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
