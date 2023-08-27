@@ -133,7 +133,6 @@ h1 {
 
 .heading-section {
     font-size: 28px;
-    color: #000;
     color: #666666;
 }
 
@@ -150,14 +149,13 @@ h1 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #46b5d1;
+    background-color: #46b5d1;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
 .dbox .icon span {
     font-size: 20px;
-    color: #fff !important;
 }
 
 .dbox .text {
@@ -191,7 +189,22 @@ h1 {
 }
 
 .contact-wrap {
-    background: #fff;
+    background-color: #fff;
+}
+
+#form-message-warning {
+    color: red;
+}
+
+#form-message-warning,
+#form-message-success {
+    display: none;
+}
+
+#form-message-success {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .form-group {
@@ -223,7 +236,7 @@ label {
 
 .form-control {
     height: 36px;
-    background: #fff;
+    background-color: #fff;
     color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     border-radius: 2px;
@@ -252,8 +265,8 @@ label {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-.btn.btn-primary {
-    background: #46b5d1 !important;
+.form-group .btn.btn-primary {
+    background-color: #46b5d1 !important;
     border-color: #46b5d1 !important;
     color: #fff;
 }

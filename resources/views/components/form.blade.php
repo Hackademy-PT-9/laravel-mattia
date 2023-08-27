@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 text-center mb-5">
-                <h2 class="heading-section">Contact Form #03</h2>
+                <h2 class="heading-section">Contact Us</h2>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -12,7 +12,7 @@
                         <div class="col-md-3">
                             <div class="dbox w-100 text-center">
                                 <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="fa fa-map-marker"></span>
+                                    <span><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></span>
                                 </div>
                                 <div class="text">
                                     <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
@@ -22,7 +22,7 @@
                         <div class="col-md-3">
                             <div class="dbox w-100 text-center">
                                 <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="fa fa-phone"></span>
+                                    <span class="fa fa-phone" style="color: #fff !important"></span>
                                 </div>
                                 <div class="text">
                                     <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
@@ -32,7 +32,7 @@
                         <div class="col-md-3">
                             <div class="dbox w-100 text-center">
                                 <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="fa fa-paper-plane"></span>
+                                    <span class="fa fa-paper-plane" style="color: #fff !important"></span>
                                 </div>
                                 <div class="text">
                                     <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
@@ -42,7 +42,7 @@
                         <div class="col-md-3">
                             <div class="dbox w-100 text-center">
                                 <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="fa fa-globe"></span>
+                                    <span><i class="fa-solid fa-earth-europe" style="color: #ffffff;"></i></span>
                                 </div>
                                 <div class="text">
                                     <p><span>Website</span> <a href="#">yoursite.com</a></p>
@@ -77,9 +77,9 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label class="label" for="subject">Subject</label>
-                                                <input type="text" class="form-control" name="subject" id="subject"
-                                                    placeholder="Subject">
+                                                <label class="label" for="subject">Cell Phone</label>
+                                                <input type="text" class="form-control" name="number" id="number"
+                                                    placeholder="Number">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
