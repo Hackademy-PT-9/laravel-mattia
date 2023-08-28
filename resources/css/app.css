@@ -17,7 +17,27 @@ nav {
 }
 
 .color-link-nav:hover {
-    color: rgb(27, 114, 249);
+    color: #46b5d1;
+}
+
+.active-link {
+    color: #46b5d1!important;
+}
+
+.btn-primary {
+    background-color: #46b5d1 !important;
+    border-color: #46b5d1 !important;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    color: #46b5d1!important;
+    border-color: #46b5d1!important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #46b5d1!important;
+    color: #fff!important;
 }
 
 /* css header homepage */
@@ -176,7 +196,7 @@ h1 {
     width: 100%;
 }
 
-.dbox p a {
+a {
     color: #46b5d1;
     transition: .3s all ease;
     text-decoration: none;
@@ -263,12 +283,6 @@ label {
     -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-}
-
-.form-group .btn.btn-primary {
-    background-color: #46b5d1 !important;
-    border-color: #46b5d1 !important;
-    color: #fff;
 }
 
 button,
