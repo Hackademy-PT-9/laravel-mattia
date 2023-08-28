@@ -24,7 +24,7 @@
                     class="@if (Route::currentRouteName() == 'about') active-link disabled @endif nav-link px-3 color-link-nav">About</a>
             </li>
             <li><a href="{{ route('contact') }}"
-                    class="@if (Route::currentRouteName() == 'contact') active-link disabled @endif nav-link px-3 color-link-nav">Contact</a>
+                    class="@if (Route::currentRouteName() == 'contact' || Route::currentRouteName() == 'send') active-link disabled @endif nav-link px-3 color-link-nav">Contact</a>
             </li>
         </ul>
         {{-- hidden d-sd --}}

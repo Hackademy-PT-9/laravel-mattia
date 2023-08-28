@@ -60,13 +60,15 @@
                         <div class="col-md-7">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4">Contact Us</h3>
-
+    
                                 {{-- Manage error --}}
+                                @if (Route::currentRouteName() == 'send')
+                                    <div id="form-message-warning" class="mb-4"></div>
 
-                                <div id="form-message-warning" class="mb-4"></div>
-                                <div id="form-message-success" class="mb-4">
-                                    Your message was sent, thank you!
-                                </div>
+                                    <div id="form-message-success" class="mb-4">
+                                        Your message was sent, thank you!
+                                    </div>
+                                @endif
 
                                 {{-- form --}}
 
@@ -83,7 +85,7 @@
                                                     value="{{ old('name') }}">
                                                 <div class="text-danger">
                                                     @error('name')
-                                                        {{$message}}
+                                                        {{ $message }}
                                                     @enderror
                                                 </div>
                                             </div>
@@ -91,34 +93,39 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="label" for="email">Email Address</label>
-                                                <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email"
-                                                    placeholder="Email@example.com" value="{{ old('email') }}">
-                                                    <div class="text-danger">
-                                                        @error('email')
-                                                            {{$message}}
-                                                        @enderror
-                                                    </div>
+                                                <input type="email"
+                                                    class="form-control @error('email') is-invalid @enderror"
+                                                    name="email" id="email" placeholder="Email@example.com"
+                                                    value="{{ old('email') }}">
+                                                <div class="text-danger">
+                                                    @error('email')
+                                                        {{ $message }}
+                                                    @enderror
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="subject">Cell Phone</label>
-                                                <input type="text" class="form-control @error('number') is-invalid @enderror" name="number" id="number"
-                                                    placeholder="Number" value="{{ old('number') }}">
-                                                    <div class="text-danger">
-                                                        @error('number')
-                                                            {{$message}}
-                                                        @enderror
-                                                    </div>
+                                                <input type="text"
+                                                    class="form-control @error('number') is-invalid @enderror"
+                                                    name="number" id="number" placeholder="Number"
+                                                    value="{{ old('number') }}">
+                                                <div class="text-danger">
+                                                    @error('number')
+                                                        {{ $message }}
+                                                    @enderror
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="#">Message</label>
-                                                <textarea name="message" class="form-control @error('message') is-invalid @enderror" id="message" cols="30" rows="4" placeholder="Message">{{ old('message') }}</textarea>
+                                                <textarea name="message" class="form-control @error('message') is-invalid @enderror" id="message" cols="30"
+                                                    rows="4" placeholder="Message">{{ old('message') }}</textarea>
                                                 <div class="text-danger">
                                                     @error('message')
-                                                        {{$message}}
+                                                        {{ $message }}
                                                     @enderror
                                                 </div>
                                             </div>

@@ -71,6 +71,7 @@ class RouteController extends Controller
             'tempo_di_realizzazione' => '2 settimane'
         ],
     ];
+    
     public function homepage()
     {
         return view('welcome');
@@ -97,6 +98,7 @@ class RouteController extends Controller
         }
         abort(404);
     }
+
     public function send(Request $request)
     {
 
@@ -115,6 +117,8 @@ class RouteController extends Controller
         ];
 
         Mail::to($data['email'])->send(new InfoMail($data));
+        
+        return view('contact');
         // @dd($data);
     }
 }

@@ -25,7 +25,7 @@ Route::get('/service', [RouteController::class, ('service')])->name('service');
 Route::get('/service/{detail}', [RouteController::class, ('detail')])->name('detail');
 
 //rotte post
-Route::post('form', [RouteController::class, 'send'])->name('send');
+Route::post('/send-success', [RouteController::class, 'send'])->name('send');
 
 //rotta test
 Route::get('/test', function () {
