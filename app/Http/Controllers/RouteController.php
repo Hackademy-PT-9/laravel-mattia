@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Mail\InfoMail;
 use Illuminate\Http\Request;
-use Illuminate\Mail\Mailable;
 use Illuminate\Support\Facades\Mail;
 
 class RouteController extends Controller
@@ -115,8 +114,7 @@ class RouteController extends Controller
             'message' => $request->input('message'),
         ];
 
+        Mail::to($data['email'])->send(new InfoMail($data));
         // @dd($data);
-
-        Mail::to($request->input('email'))->send(new InfoMail($data));
     }
 }

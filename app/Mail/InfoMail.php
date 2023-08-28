@@ -16,7 +16,7 @@ class InfoMail extends Mailable
     /**
      * Create a new message instance.
      */
-    protected $content;
+    public $content;
     public function __construct($content)
     {
         $this->content = $content;
