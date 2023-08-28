@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,15 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// rotte statiche get
 Route::get('/', [RouteController::class, ('homepage')])->name('homepage');
-
 Route::get('/about', [RouteController::class, ('about')])->name('about');
-
 Route::get('/contact', [RouteController::class, ('contact')])->name('contact');
-
 Route::get('/service', [RouteController::class, ('service')])->name('service');
 
+// rotte dinamiche get
 Route::get('/service/{detail}', [RouteController::class, ('detail')])->name('detail');
+
+//rotte post
+Route::post('form', [RouteController::class, 'send'])->name('send');
 
 //rotta test
 Route::get('/test', function () {

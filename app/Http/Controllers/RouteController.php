@@ -95,4 +95,20 @@ class RouteController extends Controller
         }
         abort(404);
     }
+    public function send(Request $request) {
+
+        $request->validate([
+            'name' => 'required|string',
+            'number' => 'nullable',
+            'email' => 'required|email',
+            'message' => 'required|min:10'
+        ]);
+
+        $data = [
+            'name' => $request->input('name'),
+            'number' => $request->input('number'),
+            'email' => $request->input('email'),
+            'message' => $request->input('message'),
+        ];
+    }
 }

@@ -70,8 +70,9 @@
 
                                 {{-- form --}}
 
-                                <form method="POST" action="{{route('homepage')}}" id="contactForm" name="contactForm" class="contactForm"
+                                <form method="POST" action="{{route('send')}}" id="contactForm" name="contactForm" class="contactForm"
                                     novalidate="novalidate">
+                                    @csrf
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
