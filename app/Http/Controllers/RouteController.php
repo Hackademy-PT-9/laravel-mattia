@@ -110,5 +110,7 @@ class RouteController extends Controller
             'email' => $request->input('email'),
             'message' => $request->input('message'),
         ];
+
+        // @dd($data);
     }
 }

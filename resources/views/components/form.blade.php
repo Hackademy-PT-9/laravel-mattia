@@ -70,35 +70,57 @@
 
                                 {{-- form --}}
 
-                                <form method="POST" action="{{route('send')}}" id="contactForm" name="contactForm" class="contactForm"
-                                    novalidate="novalidate">
+                                <form method="POST" action="{{ route('send') }}" id="contactForm" name="contactForm"
+                                    class="contactForm" novalidate="novalidate">
                                     @csrf
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="label" for="name">Full Name</label>
-                                                <input type="text" class="form-control" name="name" id="name"
-                                                    placeholder="Full Name" value="{{old('name')}}">
+                                                <input type="text"
+                                                    class="form-control @error('name') is-invalid @enderror"
+                                                    name="name" id="name" placeholder="Full Name"
+                                                    value="{{ old('name') }}">
+                                                <div class="text-danger">
+                                                    @error('name')
+                                                        {{$message}}
+                                                    @enderror
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="label" for="email">Email Address</label>
-                                                <input type="email" class="form-control" name="email" id="email"
-                                                    placeholder="Email@example.com" value="{{old('email')}}">
+                                                <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email"
+                                                    placeholder="Email@example.com" value="{{ old('email') }}">
+                                                    <div class="text-danger">
+                                                        @error('email')
+                                                            {{$message}}
+                                                        @enderror
+                                                    </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="subject">Cell Phone</label>
-                                                <input type="text" class="form-control" name="number" id="number"
-                                                    placeholder="Number" value="{{old('number')}}">
+                                                <input type="text" class="form-control @error('number') is-invalid @enderror" name="number" id="number"
+                                                    placeholder="Number" value="{{ old('number') }}">
+                                                    <div class="text-danger">
+                                                        @error('number')
+                                                            {{$message}}
+                                                        @enderror
+                                                    </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="#">Message</label>
-                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message">{{old('message')}}</textarea>
+                                                <textarea name="message" class="form-control @error('message') is-invalid @enderror" id="message" cols="30" rows="4" placeholder="Message">{{ old('message') }}</textarea>
+                                                <div class="text-danger">
+                                                    @error('message')
+                                                        {{$message}}
+                                                    @enderror
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
