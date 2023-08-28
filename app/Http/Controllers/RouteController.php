@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\InfoMail;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Mailable;
+use Illuminate\Support\Facades\Mail;
 
 class RouteController extends Controller
 {
@@ -95,7 +98,8 @@ class RouteController extends Controller
         }
         abort(404);
     }
-    public function send(Request $request) {
+    public function send(Request $request)
+    {
 
         $request->validate([
             'name' => 'required|string',
@@ -112,5 +116,7 @@ class RouteController extends Controller
         ];
 
         // @dd($data);
+
+        Mail::to($request->input('email'))->send(new InfoMail($data));
     }
 }
